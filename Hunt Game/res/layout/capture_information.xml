@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listbag" >
+
+    <RelativeLayout
+        android:id="@+id/r4"
+        android:layout_width="match_parent"
+        android:layout_height="170dip"
+        android:layout_above="@+id/h"
+        android:layout_marginTop="30dip" >
+
+        <ImageView
+            android:layout_width="140dip"
+            android:layout_height="140dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/globe" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/h"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:src="@drawable/the_hunt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/gameName"
+            android:layout_width="250dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:text="test"
+            android:textSize="25dip"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/hunter_img"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/globe" />
+
+            <ImageView
+                android:id="@+id/fugitiveimg"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/globe" />
+
+            <TextView
+                android:id="@+id/hunterUserName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/hunter_img"
+                android:layout_below="@+id/hunter_img"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Username"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/huntertxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/hunter_img"
+                android:layout_below="@+id/hunterUserName"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="HUNTER"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fugitivUserName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fugitiveimg"
+                android:layout_below="@+id/fugitiveimg"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Username"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fugitivetxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fugitiveimg"
+                android:layout_below="@+id/fugitivUserName"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="FUGITIVE"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/game_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/msg_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#aaffffff"
+            android:minLines="5"
+            android:padding="8dip"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/btn_default"
+            android:onClick="seecapture_click"
+            android:text="See Capture" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:drawable/btn_default"
+            android:onClick="close_btn"
+            android:text="Close" />
+    </LinearLayout>
+
+</RelativeLayout>

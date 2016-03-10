@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dip"
+        android:layout_margin="5dip"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/list_images"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dip"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/heading_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/list_images"
+            android:gravity="center_vertical"
+            android:text="sssssssssssssjs"
+            android:textColor="#000000"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="135dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/rejectrequest_btn"
+                android:layout_width="60dip"
+                android:layout_height="35dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="Reject"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/acceptrequest_btn"
+                android:layout_width="90dip"
+                android:layout_height="35dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dip"
+                android:layout_toLeftOf="@+id/rejectrequest_btn"
+                android:text="Accept"
+                android:textColor="#000000" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

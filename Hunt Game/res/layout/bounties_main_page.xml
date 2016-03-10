@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listbag" >
+
+    <RelativeLayout
+        android:id="@+id/r4"
+        android:layout_width="match_parent"
+        android:layout_height="170dip"
+        android:layout_above="@+id/h"
+        android:layout_marginTop="30dip" >
+
+        <ImageView
+            android:layout_width="140dip"
+            android:layout_height="140dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/globe" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/h"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:src="@drawable/the_hunt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="4"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="230dip"
+                    android:layout_height="45dip"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/current_bouties_text" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="183dp"
+                android:layout_height="50dp"
+                android:background="@drawable/password"
+                android:text="Sort by Time"
+                android:textSize="12sp" />
+
+            <Button
+                android:layout_width="183dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:background="@drawable/username"
+                android:paddingRight="30dp"
+                android:text="Sort by Distance"
+                android:textSize="12sp" />
+
+            <Button
+                android:layout_width="183dp"
+                android:layout_height="50dp"
+                android:background="@drawable/password"
+                android:text="Sort by Game"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="230dip"
+                android:layout_height="45dip"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/sorted_by_arguments_text" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.5"
+            android:horizontalSpacing="4dip"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:paddingLeft="2dip"
+            android:verticalSpacing="4dip"
+            android:visibility="visible" >
+        </GridView>
+    </LinearLayout>
+
+</RelativeLayout>

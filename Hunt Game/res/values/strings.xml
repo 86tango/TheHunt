@@ -1,0 +1,619 @@
+<resources>
+
+    <string name="app_name">Hunt Game</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Hunt Game</string>
+    <string name="facebook_login_S">facebook Login</string>
+    <string name="signIn_S">SignIn</string>
+    <string name="register_S">Register</string>
+    <string name="username_hint">UserName</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="email_hint">Email_Id</string>
+    <string name="age_hint">Age</string>
+    <string name="height_hint">Height</string>
+    <string name="weight_hint">Weight</string>
+    <string name="ethinicity_hint">Ethinicity</string>
+    <string name="invite_friends">Invite From Contacts \n (SMS)</string>
+    <string name="tutorial">
+<![CDATA[
+  <p class="P3">
+    <span class="T1">
+      TUTORIAL
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      Welcome to The Hunt! The worlds first live action mobile application game.
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      This quick tutorial will explain the basic functions to allow any user to quickly begin capturing fugitives and climbing the leader board.
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T1">
+      GOAL of The Hunt
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      The Goal of The Hunt is to locate and capture other players in your game. You can capture another player by either taking a photograph (gaining you 1500 points), and writing a short summary of the capture then submitting or for extra points, you can take a video of the fugitive, gaining you 2500 points.
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      You may continue game play by posting bail
+    </span>
+    <span class="T4">
+      
+    </span>
+    <span class="T3">
+      after being captured
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T1">
+      Game Creation
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      At anytime, any user can create a game and invite others to play. Simply choose CREATE GAME from the main menu screen and enter: 
+    </span>
+  </p>
+  <ul>
+    <li>
+      <p class="P4" style="margin-left:1.27cm;">
+        <span class="ListLabel_20_1" style="display:block;float:left;min-width:0.635cm;">
+          --
+        </span>
+        <span class="T2">
+          Game Name  
+        </span>
+        <span class="odfLiEnd"/>
+        
+      </p>
+    </li>
+    <li>
+      <p class="P4" style="margin-left:1.27cm;">
+        <span class="ListLabel_20_1" style="display:block;float:left;min-width:0.635cm;">
+          --
+        </span>
+        <span class="T2">
+          Start Date – Start Time 
+        </span>
+        <span class="odfLiEnd"/>
+        
+      </p>
+    </li>
+    <li>
+      <p class="P4" style="margin-left:1.27cm;">
+        <span class="ListLabel_20_1" style="display:block;float:left;min-width:0.635cm;">
+          --
+        </span>
+        <span class="T2">
+          End Date – End Time 
+        </span>
+        <span class="odfLiEnd"/>
+        
+      </p>
+    </li>
+    <li>
+      <p class="P4" style="margin-left:1.27cm;">
+        <span class="ListLabel_20_1" style="display:block;float:left;min-width:0.635cm;">
+          --
+        </span>
+        <span class="T2">
+          Game Type 
+        </span>
+        <span class="odfLiEnd"/>
+        
+      </p>
+    </li>
+    <li>
+      <p class="P4" style="margin-left:1.27cm;">
+        <span class="ListLabel_20_1" style="display:block;float:left;min-width:0.635cm;">
+          --
+        </span>
+        <span class="T2">
+          Determine in you will Moderate the game 
+        </span>
+        <span class="odfLiEnd"/>
+        
+      </p>
+    </li>
+    <li>
+      <p class="P4" style="margin-left:1.27cm;">
+        <span class="ListLabel_20_1" style="display:block;float:left;min-width:0.635cm;">
+          --
+        </span>
+        <span class="T2">
+          Select a Location for play 
+        </span>
+        <span class="odfLiEnd"/>
+        
+      </p>
+    </li>
+    <li>
+      <p class="P4" style="margin-left:1.27cm;">
+        <span class="ListLabel_20_1" style="display:block;float:left;min-width:0.635cm;">
+          --
+        </span>
+        <span class="T2">
+          Create a game radius for play 
+        </span>
+        <span class="odfLiEnd"/>
+        
+      </p>
+    </li>
+  </ul>
+  <p class="P1">
+    <span class="T1">
+      GAME NAME
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      Choose a game name that will be easily identifiable to other players, remember most users will be playing more that one game at a time.
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T1">
+      Start Date – Start Time
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      When creating a game you need to choose a start date and start time that is at least 12 hours in the future. The more time you have for other players to accept your game request, the more dynamic the game will be. We suggest giving your players several days to accept and join your game before game play begins.
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T1">
+      End Date – End Time
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      The End Date and Time will be effected by the type of game you choose to play. However Games should last at least 24 hours with several  game types requiring 48 hours of minimum game play. Please see Game Types for more details
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T1">
+      Game Type
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      When playing The Hunt you will notice there are several different types of games you can play. This allows you to tailor the games specific to the number of players and skill level of the players. The more players per game the more dynamic game play will be.
+    </span>
+  </p>
+  <ul>
+    <li>
+      <p class="P4" style="margin-left:1.27cm;">
+        <span class="ListLabel_20_1" style="display:block;float:left;min-width:0.635cm;">
+          --
+        </span>
+        <span class="T2">
+          Original Game
+        </span>
+        <span class="odfLiEnd"/>
+        
+      </p>
+      <ul>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              Minimum of 3 players needed to start this game
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              Each player receives 1 bounty to hunt at a time
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              Once captured, players can post Bail
+            </span>
+            <span class="T4">
+              
+            </span>
+            <span class="T3">
+              at any time before the end of the game
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T3">
+              If a player is being held on bail longer than 24 hours, they loose their assigned bounty. 
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              Upon posting Bail
+            </span>
+            <span class="T4">
+              
+            </span>
+            <span class="T3">
+              players are put back into the cue to be reassigned to another Bounty Hunter
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p class="P4" style="margin-left:1.27cm;">
+        <span class="ListLabel_20_1" style="display:block;float:left;min-width:0.635cm;">
+          --
+        </span>
+        <span class="T2">
+          Free For All
+        </span>
+        <span class="odfLiEnd"/>
+        
+      </p>
+      <ul>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              Minimum of 3 players needed to start this game
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              Every player may hunt every other player
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              Once captured, player can post Bail
+            </span>
+            <span class="T4">
+              
+            </span>
+            <span class="T3">
+              at any time before the end of the game
+            </span>
+            <span class="T2">
+              and continue hunting all other players
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              If being held on bail, players may not continue to capture other players, you must post bail before continuing to hunt
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              The Winner is based on a total score for that game
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p class="P4" style="margin-left:1.27cm;">
+        <span class="ListLabel_20_1" style="display:block;float:left;min-width:0.635cm;">
+          --
+        </span>
+        <span class="T2">
+          Last man standing
+        </span>
+        <span class="odfLiEnd"/>
+        
+      </p>
+      <ul>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              Each player receives 1 bounty to hunt at a time
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              Once captured, a players has 24 hours to post Bail
+            </span>
+            <span class="T4">
+              
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              Upon posting Bail
+            </span>
+            <span class="T4">
+              
+            </span>
+            <span class="T3">
+              players are put back into the cue to be reassigned to another Bounty Hunter
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              If a player is being held on bail longer than 24 hours, that player forfeits the game
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              When there are only 2 players left in the game, the winner is determined by the first person to make the last capture.
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p class="P4" style="margin-left:1.27cm;">
+        <span class="ListLabel_20_1" style="display:block;float:left;min-width:0.635cm;">
+          --
+        </span>
+        <span class="T2">
+          Double Jeopardy
+        </span>
+        <span class="odfLiEnd"/>
+        
+      </p>
+      <ul>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              Minimum of 6 players needed to start this game
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              All players are given 2 fugitives to hunt at a time.
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              Players may only capture another fugitive if they themselves are not being held on bail
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              Players will loose any fugitives they are assigned if they fail to post bail within 24 hours of being captures
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+        <li>
+          <p class="P4" style="margin-left:1.27cm;">
+            <span class="ListLabel_20_2" style="display:block;float:left;min-width:0.635cm;">
+              oo
+            </span>
+            <span class="T2">
+              Upon posting Bail
+            </span>
+            <span class="T4">
+              
+            </span>
+            <span class="T3">
+              players are put back into the cue to be reassigned to another Bounty Hunter
+            </span>
+            <span class="odfLiEnd"/>
+            
+          </p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p class="P1">
+    <span class="T1">
+      Game Moderation
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      When creating a game you as the creator can determine if you would like the game moderated. If so you as the creator will the be the moderator and will not be allowed to play the this newly created game. However, if you choose to turn off moderation, you will be a player along with everyone who accepts the game request.
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      If Game Moderation is on:
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      While game moderation is on, the moderator will view all captures. When moderation is turned on players may challenge the capture for 2 reasons:
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      - Picture is not of me
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      - Picture was not taken at time of capture
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      IF Game Moderation is turned off:
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      All captures will be final if Game Moderation is turned off.
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T1">
+      Location for play:
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      Location for play allows the creator to determine where the center of the playing field is located. This will usually be a point of reference that is well known to the players such as: a Building, park, school, etc.
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T1">
+      Radius of play:
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      Radius of play determines how large the playing area is. Acceptable sizes are .5 miles (1km)  to 25 miles (40km).  Note: Usually anything larger than a few miles is too large.
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T1">
+      CAPTURING A FUGITIVE
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      Once a game has started simply go to your Slideout menu on the main screen and click on Bounties. All current bounties will be displayed.
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T1">
+      POSTING BAIL
+    </span>
+  </p>
+  <p class="P1">
+    <span class="T2">
+      Once you’ve been captured posting bail is easy. Simply Click on PLAYER STATUS on the main menu and select the game where you are BEING HELD ON BAIL. By clicking on that game you are given the option to post immediately with your Google account or use your points from the game.
+    </span>
+  </p>
+  <p class="P2">
+    
+  </p>
+  <p class="P2">
+    
+  </p>
+  <p class="P1">
+    
+  </p>
+
+]]>
+    </string>
+
+</resources>

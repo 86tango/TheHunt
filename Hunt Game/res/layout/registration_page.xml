@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="250dip"
+                android:layout_height="55dip"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/create_account_text" />
+
+            <EditText
+                android:id="@+id/UserName_edttxt"
+                android:layout_width="275dip"
+                android:layout_height="75dip"
+                android:layout_below="@+id/img1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/right_edit"
+                android:hint="Create a Username"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dip"
+                android:paddingRight="77dip"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="14dip" />
+
+            <EditText
+                android:id="@+id/Email_edttxt"
+                android:layout_width="275dip"
+                android:layout_height="75dip"
+                android:layout_below="@+id/UserName_edttxt"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/left_edit"
+                android:hint="Email for account verification"
+                android:imeOptions="actionNext"
+                android:paddingLeft="85dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="14dip" />
+
+            <EditText
+                android:id="@+id/password_edttxt"
+                android:layout_width="275dip"
+                android:layout_height="75dip"
+                android:layout_below="@+id/Email_edttxt"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/right_edit"
+                android:hint="Create a Password"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dip"
+                android:paddingRight="77dip"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="14dip" />
+
+            <EditText
+                android:id="@+id/confirmPassword_edttxt"
+                android:layout_width="275dip"
+                android:layout_height="75dip"
+                android:layout_below="@+id/password_edttxt"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/left_edit"
+                android:hint="Verify Password "
+                android:imeOptions="actionDone"
+                android:paddingLeft="85dip"
+                android:paddingRight="10dip"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="14dip" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:layout_below="@+id/confirmPassword_edttxt"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/submit"
+                android:onClick="Register_btn" />
+
+            <ImageView
+                android:layout_width="280dip"
+                android:layout_height="80dip"
+                android:layout_below="@+id/submit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"
+                android:src="@drawable/the_hunt" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

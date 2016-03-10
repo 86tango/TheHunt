@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/globe" />
+
+    <ImageView
+        android:id="@+id/imgView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00678789"
+        android:src="@drawable/the_hunt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/btn_heading_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="100dip"
+                android:layout_height="45dip"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dip"
+                android:onClick="friends_requests_click"
+                android:text="Requests"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="45dip"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dip"
+                android:onClick="users_click"
+                android:text="Find Friends"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/heading_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/frinedslist_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/textsearch_heading_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/searchtext"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dip"
+                android:hint="search"
+                android:onClick="friends_requests_click"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/list_userslist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/listbag"
+            android:cacheColorHint="@android:color/transparent"
+            android:padding="5dip" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

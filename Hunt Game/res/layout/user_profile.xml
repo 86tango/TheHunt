@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="230dip"
+                android:layout_height="45dip"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/userprofile_text" />
+            <!-- ************************** -->
+
+            <RelativeLayout
+                android:id="@+id/r_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_marginTop="20dip" >
+
+                <RelativeLayout
+                    android:id="@+id/r1"
+                    android:layout_width="120dip"
+                    android:layout_height="175dip"
+                    android:background="@drawable/photo_bg" >
+
+                    <ImageView
+                        android:id="@+id/userphoto_imgView"
+                        android:layout_width="100dip"
+                        android:layout_height="100dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dip"
+                        android:src="@drawable/globe" />
+
+                    <TextView
+                        android:id="@+id/add_changephoto_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/userphoto_imgView"
+                        android:layout_marginTop="10dip"
+                        android:clickable="true"
+                        android:gravity="center_horizontal"
+                        android:onClick="Addphoto_click"
+                        android:textColor="#ffffff"
+                        android:textSize="17dip"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <!-- ################ -->
+
+                <RelativeLayout
+                    android:id="@+id/rr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@+id/r1"
+                    android:background="@drawable/text_black_small" >
+
+                    <RelativeLayout
+                        android:id="@+id/c1"
+                        android:layout_width="2dip"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:background="@drawable/line" >
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/c1" >
+
+                        <TextView
+                            android:id="@+id/starttime"
+                            style="@style/create_new_game_white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="3dip"
+                            android:text="Age" />
+
+                        <RelativeLayout
+                            android:id="@+id/rel_game_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/starttime"
+                            android:layout_marginBottom="5dip"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_marginTop="4dip"
+                            android:background="@drawable/white_small_bg" >
+
+                            <Spinner
+                                android:id="@+id/age_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/clock1_end"
+                                android:background="#ffffff"
+                                android:gravity="center" />
+
+                            <ImageView
+                                android:layout_width="10dip"
+                                android:layout_height="10dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="7dip"
+                                android:background="@drawable/down_arr" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/c1" >
+
+                        <TextView
+                            android:id="@+id/starttime"
+                            style="@style/create_new_game_white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="3dip"
+                            android:text="Sex" />
+
+                        <RelativeLayout
+                            android:id="@+id/rel_game_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/starttime"
+                            android:layout_marginBottom="5dip"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_marginTop="4dip"
+                            android:background="@drawable/white_small_bg" >
+
+                            <Spinner
+                                android:id="@+id/sex_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/clock1_end"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="Male" />
+
+                            <ImageView
+                                android:layout_width="10dip"
+                                android:layout_height="10dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="7dip"
+                                android:background="@drawable/down_arr" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <!-- ################ -->
+
+                <RelativeLayout
+                    android:id="@+id/rr2"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dip"
+                    android:layout_below="@+id/rr1"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_toRightOf="@+id/r1"
+                    android:background="@drawable/text_black_small" >
+
+                    <RelativeLayout
+                        android:id="@+id/c1"
+                        android:layout_width="2dip"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:background="@drawable/line" >
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/c1" >
+
+                        <TextView
+                            android:id="@+id/starttime"
+                            style="@style/create_new_game_white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="3dip"
+                            android:text="Height" />
+
+                        <RelativeLayout
+                            android:id="@+id/rel_game_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/starttime"
+                            android:layout_marginBottom="5dip"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_marginTop="4dip"
+                            android:background="@drawable/white_small_bg" >
+
+                            <Spinner
+                                android:id="@+id/height_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/clock1_end"
+                                android:background="#ffffff"
+                                android:gravity="center" />
+
+                            <ImageView
+                                android:layout_width="10dip"
+                                android:layout_height="10dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="7dip"
+                                android:background="@drawable/down_arr" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/c1" >
+
+                        <TextView
+                            android:id="@+id/starttime"
+                            style="@style/create_new_game_white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="3dip"
+                            android:text="Weight" />
+
+                        <RelativeLayout
+                            android:id="@+id/rel_game_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/starttime"
+                            android:layout_marginBottom="5dip"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_marginTop="4dip"
+                            android:background="@drawable/white_small_bg" >
+
+                            <Spinner
+                                android:id="@+id/weight_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/clock1_end"
+                                android:background="#ffffff"
+                                android:gravity="center" />
+
+                            <ImageView
+                                android:layout_width="10dip"
+                                android:layout_height="10dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="7dip"
+                                android:background="@drawable/down_arr" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <!-- ################ -->
+
+                <RelativeLayout
+                    android:id="@+id/rr3"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dip"
+                    android:layout_below="@+id/rr2"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_toRightOf="@+id/r1"
+                    android:background="@drawable/text_black_small" >
+
+                    <RelativeLayout
+                        android:id="@+id/c1"
+                        android:layout_width="2dip"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:background="@drawable/line" >
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/c1" >
+
+                        <TextView
+                            android:id="@+id/starttime"
+                            style="@style/create_new_game_white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="3dip"
+                            android:text="Hair Color" />
+
+                        <RelativeLayout
+                            android:id="@+id/rel_game_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/starttime"
+                            android:layout_marginBottom="5dip"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_marginTop="4dip"
+                            android:background="@drawable/white_small_bg" >
+
+                            <Spinner
+                                android:id="@+id/hair_colour_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/clock1_end"
+                                android:background="#ffffff"
+                                android:gravity="center" />
+
+                            <ImageView
+                                android:layout_width="10dip"
+                                android:layout_height="10dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="7dip"
+                                android:background="@drawable/down_arr" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/c1" >
+
+                        <TextView
+                            android:id="@+id/starttime"
+                            style="@style/create_new_game_white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="3dip"
+                            android:text="Eye Color" />
+
+                        <RelativeLayout
+                            android:id="@+id/rel_game_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/starttime"
+                            android:layout_marginBottom="5dip"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_marginTop="4dip"
+                            android:background="@drawable/white_small_bg" >
+
+                            <Spinner
+                                android:id="@+id/eye_colour_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/clock1_end"
+                                android:background="#ffffff"
+                                android:gravity="center" />
+
+                            <ImageView
+                                android:layout_width="10dip"
+                                android:layout_height="10dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="7dip"
+                                android:background="@drawable/down_arr" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <!-- **********************$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+
+            <!-- *********************************** -->
+
+            <RelativeLayout
+                android:id="@+id/r_b_gb"
+                android:layout_width="match_parent"
+                android:layout_height="180dip"
+                android:layout_below="@+id/r_top"
+                android:layout_marginTop="35dip" >
+
+                <ImageView
+                    android:layout_width="145dip"
+                    android:layout_height="145dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dip"
+                    android:src="@drawable/globe" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:layout_below="@+id/r_b_gb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dip"
+                android:src="@drawable/the_hunt" />
+            <!-- **************###############3********************* -->
+            <!-- ################ -->
+
+            <RelativeLayout
+                android:id="@+id/r_b_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r_top" >
+
+                <TextView
+                    android:id="@+id/txt_username"
+                    android:layout_width="120dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_horizontal"
+                    android:text="UserName"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+            <!-- *********************************** -->
+
+            <RelativeLayout
+                android:id="@+id/r_b_r1"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+id/r_b_username"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/text_black_lay" >
+
+                <TextView
+                    android:id="@+id/loc"
+                    style="@style/create_new_game_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dip"
+                    android:text="Location #1" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/location1_Autocomplete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/loc"
+                    android:layout_marginBottom="3dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/white_long_bg"
+                    android:hint="Enter a location you can be found"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:textColor="#000000"
+                    android:textSize="13dip" />
+            </RelativeLayout>
+
+            <!-- *********************************** -->
+
+            <RelativeLayout
+                android:id="@+id/r_b_r2"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+id/r_b_r1"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/text_black_lay" >
+
+                <TextView
+                    android:id="@+id/loc"
+                    style="@style/create_new_game_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dip"
+                    android:text="Location #2" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/location2_Autocomplete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/loc"
+                    android:layout_marginBottom="3dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/white_long_bg"
+                    android:hint="Enter a second location that you can be found"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:textColor="#000000"
+                    android:textSize="13dip" />
+            </RelativeLayout>
+
+            <!-- ***************************** -->
+
+            <Button
+                android:layout_width="150dip"
+                android:layout_height="45dip"
+                android:layout_below="@+id/r_b_r2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/save_but"
+                android:onClick="Save_click"
+                android:text="SUBMIT"
+                android:textColor="#ffffff"
+                android:textSize="16dip"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

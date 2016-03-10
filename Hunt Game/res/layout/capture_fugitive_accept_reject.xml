@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listbag" >
+
+    <RelativeLayout
+        android:id="@+id/r4"
+        android:layout_width="match_parent"
+        android:layout_height="170dip"
+        android:layout_above="@+id/h"
+        android:layout_marginTop="30dip" >
+
+        <ImageView
+            android:layout_width="140dip"
+            android:layout_height="140dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/globe" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/h"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:src="@drawable/the_hunt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/GameName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/hunter_img"
+            android:layout_below="@+id/hunter_img"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="Username"
+            android:textSize="22dip" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/hunter_img"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/globe" />
+
+            <ImageView
+                android:id="@+id/fugitiveimg"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/globe" />
+
+            <TextView
+                android:id="@+id/hunterUserName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/hunter_img"
+                android:layout_below="@+id/hunter_img"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Username"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/huntertxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/hunter_img"
+                android:layout_below="@+id/hunterUserName"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="HUNTER"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fugitivUserName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fugitiveimg"
+                android:layout_below="@+id/fugitiveimg"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Username"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fugitivtxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fugitiveimg"
+                android:layout_below="@+id/fugitivUserName"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="FUJITIVE"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/game_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/moderatorname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Message from Hunter" />
+
+        <TextView
+            android:id="@+id/msg_from_fugitive_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#eeffffff"
+            android:ems="10"
+            android:hint="Message from Fugitive Here"
+            android:minLines="5"
+            android:padding="8dip"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/btn_default"
+            android:onClick="seecapture_click"
+            android:text="See Capture" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="right" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/btn_default"
+                    android:onClick="Acceptbtn"
+                    android:text="Accept" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="left" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/btn_default"
+                    android:onClick="Rejectbtn"
+                    android:text="Reject" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
